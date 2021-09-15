@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{08007EA4-39CA-42D5-A8B8-184DB9C3E15A}</ProjectGuid>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AssemblyTitle>Mc3s.Odos.Domain.Northwind</AssemblyTitle>
+    <Product>Mc3s.Odos.Domain.Northwind</Product>
+    <Copyright>Copyright ©  2013</Copyright>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>MC3S.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MC3S.snk" />
+    <None Include="Model\Mc3s.Odos.Domain.Northwind.oom" />
+  </ItemGroup>
+
+	<Choose>
+		<When Condition="$(SolutionName.Contains('Refactoring')) ">
+			<ItemGroup>
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos\Mc3s.Odos.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib\Mc3s.SharedLib.csproj" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<!--Reference to nuget.-->
+				<PackageReference Include="Mc3s.Odos" Version="3.0.5" />
+				<PackageReference Include="Mc3s.SharedLib" Version="3.0.5" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+	
+
+</Project>
