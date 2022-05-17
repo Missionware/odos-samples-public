@@ -5,7 +5,6 @@
     <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
 
-
 	<Choose>
 		<When Condition="$(SolutionName.Contains('Refactoring')) ">
 			<ItemGroup>
@@ -26,7 +25,6 @@
 		</When>
 		<Otherwise>
 			<ItemGroup>
-				<!--Reference to nuget.-->
 				<PackageReference Include="Mc3s.Odos.Comm.Streaming" Version="3.0.5" />
 				<PackageReference Include="Mc3s.Odos.Domain" Version="3.0.5" />
 				<PackageReference Include="Mc3s.Odos.Security.Identity.Domain" Version="3.0.5" />
@@ -44,11 +42,8 @@
 		</Otherwise>
 	</Choose>
 
-
 	<ItemGroup>
 		<ProjectReference Include="..\Mc3s.Odos.Domain.Northwind\Mc3s.Odos.Domain.Northwind.csproj" />
 	</ItemGroup>
-
-	
 
 </Project>
