@@ -8,6 +8,7 @@ using Mc3s.Odos.Library;
 //
 [assembly: DisplayAs(_Label = "Northwind Domain")]
 [assembly: RuntimeDomain(_DomainName = "Mc3s.Odos.Domain.Northwind",
+                         _DomainShortCode = "NWND",
                          _SecurityEnabled = false,
                          _NoRoleCanLogin = true,
                          _IsReportProvider = true)]
