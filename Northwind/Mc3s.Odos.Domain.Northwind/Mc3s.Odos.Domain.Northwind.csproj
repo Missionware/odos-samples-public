@@ -16,6 +16,12 @@
 				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib\Mc3s.SharedLib.csproj" />
 			</ItemGroup>
 		</When>
+		<When Condition="$(SolutionName.Contains('Analysis')) ">
+			<ItemGroup>
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos\Mc3s.Odos.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib\Mc3s.SharedLib.csproj" />
+			</ItemGroup>
+		</When>
 		<Otherwise>
 			<ItemGroup>
 				<!--Reference to nuget.-->
