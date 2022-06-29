@@ -20,6 +20,23 @@
 				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos\Mc3s.Odos.csproj" />
 				<ProjectReference Include="..\..\..\odos\src\Mc3s.Serialization\Mc3s.Serialization.csproj" />
 				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib.WindowsOS\Mc3s.SharedLib.WindowsOS.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib\Mc3s.SharedLib.csproj" />
+			</ItemGroup>
+		</When>
+		<When Condition="$(SolutionName.Contains('Analysis')) ">
+			<ItemGroup>
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Comm.Streaming\Mc3s.Odos.Comm.Streaming.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Domain\Mc3s.Odos.Domain.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Security.Identity.Domain\Mc3s.Odos.Security.Identity.Domain.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Security.Identity\Mc3s.Odos.Security.Identity.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Security.Ldap\Mc3s.Odos.Security.Ldap.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Security.WindowsOS\Mc3s.Odos.Security.WindowsOS.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Security\Mc3s.Odos.Security.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Server.Adapters.Rdbms.MSSQL\Mc3s.Odos.Server.Adapters.Rdbms.MSSQL.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Server\Mc3s.Odos.Server.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos\Mc3s.Odos.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.Serialization\Mc3s.Serialization.csproj" />
+				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib.WindowsOS\Mc3s.SharedLib.WindowsOS.csproj" />
 				<ProjectReference Include="..\..\..\odos\src\Mc3s.SharedLib\Mc3s.SharedLib.csproj" />			
 			</ItemGroup>
 		</When>
@@ -43,6 +60,7 @@
 	</Choose>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\odos\src\Mc3s.Serialization.BinaryFormatterAddin\Mc3s.Serialization.BinaryFormatterAddin.csproj" />
 		<ProjectReference Include="..\Mc3s.Odos.Domain.Northwind\Mc3s.Odos.Domain.Northwind.csproj" />
 	</ItemGroup>
 
