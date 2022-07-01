@@ -60,6 +60,9 @@
 	</Choose>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Server.Adapters.Rdbms.ORACLE\Mc3s.Odos.Server.Adapters.Rdbms.ORACLE.csproj" />
+		<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Server.Adapters.Rdbms.POSTGRESQL\Mc3s.Odos.Server.Adapters.Rdbms.POSTGRESQL.csproj" />
+		<ProjectReference Include="..\..\..\odos\src\Mc3s.Odos.Server.Adapters.Rdbms.SQLite\Mc3s.Odos.Server.Adapters.Rdbms.SQLite.csproj" />
 		<ProjectReference Include="..\..\..\odos\src\Mc3s.Serialization.BinaryFormatterAddin\Mc3s.Serialization.BinaryFormatterAddin.csproj" />
 		<ProjectReference Include="..\Mc3s.Odos.Domain.Northwind\Mc3s.Odos.Domain.Northwind.csproj" />
 	</ItemGroup>
